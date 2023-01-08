@@ -1,0 +1,50 @@
+2023-01-08T01:48:30.094966400255-01:48:30 **** Incremental Build of configuration Debug for project hello_zmod ****
+000-make all 
+000-C:/Xilinx/Vitis/2022.2/gnuwin/bin/make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-C:/Xilinx/Vitis/2022.2/gnuwin/bin/make --no-print-directory main-build
+000-'Building file: ../src/Zmod/baremetal/reg/reg.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Zmod/baremetal/reg/reg.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/Vitis/eclypse_0/export/eclypse_0/sw/eclypse_0/standalone_domain/bspinclude/include -MMD -MP -MF"src/Zmod/baremetal/reg/reg.d" -MT"src/Zmod/baremetal/reg/reg.o" -o "src/Zmod/baremetal/reg/reg.o" "../src/Zmod/baremetal/reg/reg.c"
+000-'Finished building: ../src/Zmod/baremetal/reg/reg.c'
+000-' '
+000-'Building file: ../src/Zmod/baremetal/intc/intc.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Zmod/baremetal/intc/intc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/Vitis/eclypse_0/export/eclypse_0/sw/eclypse_0/standalone_domain/bspinclude/include -MMD -MP -MF"src/Zmod/baremetal/intc/intc.d" -MT"src/Zmod/baremetal/intc/intc.o" -o "src/Zmod/baremetal/intc/intc.o" "../src/Zmod/baremetal/intc/intc.c"
+000-'Finished building: ../src/Zmod/baremetal/intc/intc.c'
+000-' '
+000-'Building file: ../src/Zmod/baremetal/flash/flash.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Zmod/baremetal/flash/flash.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/Vitis/eclypse_0/export/eclypse_0/sw/eclypse_0/standalone_domain/bspinclude/include -MMD -MP -MF"src/Zmod/baremetal/flash/flash.d" -MT"src/Zmod/baremetal/flash/flash.o" -o "src/Zmod/baremetal/flash/flash.o" "../src/Zmod/baremetal/flash/flash.c"
+000-'Finished building: ../src/Zmod/baremetal/flash/flash.c'
+000-' '
+000-'Building file: ../src/Zmod/baremetal/dma/dma.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Zmod/baremetal/dma/dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/Vitis/eclypse_0/export/eclypse_0/sw/eclypse_0/standalone_domain/bspinclude/include -MMD -MP -MF"src/Zmod/baremetal/dma/dma.d" -MT"src/Zmod/baremetal/dma/dma.o" -o "src/Zmod/baremetal/dma/dma.o" "../src/Zmod/baremetal/dma/dma.c"
+000-'Finished building: ../src/Zmod/baremetal/dma/dma.c'
+000-' '
+000-'Building file: ../src/main.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/Vitis/eclypse_0/export/eclypse_0/sw/eclypse_0/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+000-'Finished building: ../src/main.c'
+000-' '
+000-'Building file: ../src/platform.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/Vitis/eclypse_0/export/eclypse_0/sw/eclypse_0/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+000-'Finished building: ../src/platform.c'
+000-' '
+000-'Building target: hello_zmod.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/Vitis/eclypse_0/export/eclypse_0/sw/eclypse_0/standalone_domain/bsplib/lib -o "hello_zmod.elf"  ./src/Zmod/linux/reg/reg.o  ./src/Zmod/linux/flash/flash.o  ./src/Zmod/linux/dma/dma.o ./src/Zmod/linux/dma/libaxidma.o  ./src/Zmod/linux/utils.o  ./src/Zmod/baremetal/reg/reg.o  ./src/Zmod/baremetal/intc/intc.o  ./src/Zmod/baremetal/flash/flash.o  ./src/Zmod/baremetal/dma/dma.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: hello_zmod.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size hello_zmod.elf  |tee "hello_zmod.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  49343	   3104	  22744	  75191	  125b7	hello_zmod.elf
+000-'Finished building: hello_zmod.elf.size'
+000-' '
+00255-
+01:48:32 Build Finished (took 1s.991ms)
+

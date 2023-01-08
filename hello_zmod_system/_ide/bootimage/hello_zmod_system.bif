@@ -1,0 +1,12 @@
+/* C:/Users/jacki/AppData/Local/Temp/bootgen_hello_zmod_system1936793582768159470/sd_card_temp/boot.bif */
+/* Command to create bitstream .bin file:       */
+/*   bootgen -image <bif_file> -split bin -w    */
+/* Command to create BOOT.BIN file:             */
+/*   bootgen  -image <bif_file> -w -o i BOOT.BIN */
+/*eclypse_0*/
+the_ROM_image:
+{
+ [bootloader] D:/Vitis/eclypse_0/export/eclypse_0/sw/eclypse_0/boot/fsbl.elf
+ D:/Vitis/hello_zmod/_ide/bitstream/design_1_wrapper.bit
+ D:/Vitis/hello_zmod/Debug/hello_zmod.elf
+}

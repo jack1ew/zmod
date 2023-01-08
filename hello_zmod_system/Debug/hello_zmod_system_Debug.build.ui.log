@@ -1,0 +1,10 @@
+2023-01-08T01:48:32.360975300255-01:48:32 **** Incremental Build of configuration Debug for project hello_zmod_system ****
+000-make all 
+000-Generating bif file for the system project
+000-generate_system_bif.bat 14866 D:/Vitis/eclypse_0/export/eclypse_0/eclypse_0.xpfm standalone_domain D:/Vitis/hello_zmod_system/Debug/system.bif
+000-sdcard_gen --xpfm D:/Vitis/eclypse_0/export/eclypse_0/eclypse_0.xpfm --sys_config eclypse_0 --bif D:/Vitis/hello_zmod_system/Debug/system.bif --bitstream D:/Vitis/hello_zmod/_ide/bitstream/design_1_wrapper.bit --elf D:/Vitis/hello_zmod/Debug/hello_zmod.elf,ps7_cortexa9_0
+000-creating BOOT.BIN using D:/Vitis/hello_zmod/_ide/bitstream/design_1_wrapper.bit
+000-Running C:/Xilinx/Vitis/2022.2/bin/bootgen  -image D:/Vitis/hello_zmod_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+00255-
+01:48:39 Build Finished (took 6s.719ms)
+
